@@ -1,0 +1,36 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix aau: <http://aau.at/> .
+@prefix ex3: <https://aau.at/mareitzl/ex3> .
+
+# Peter is a Person
+
+ex3:Peter rdf:type schema:Person .
+
+
+# Every student is a person
+
+ex3:Student rdf:subClassOf schema:Person .
+
+
+# Jonas and Rosemary are children of Peter, who are 3 and 5
+
+ex3:Peter rdf:children ex3:Jonas .
+ex3:Peter rdf:children ex3:Rosemary .
+ex3:Jonas schema:birthDate"2018-11-22" .
+ex3:Rosemary schema:birthDate"2016-11-22" .
+
+
+# Mark IV is developed by Canon for professional photographers
+
+ex3:MarkIV schema:manufacturer ex3:Canon .
+ex3:MarkIV schema:audience [
+    rdf:type schema:Audience ;
+    schema:audienceType "professional photographers"
+    ] .
+
+
+# My friend told me that a person who owns a cat is a woman
+
+

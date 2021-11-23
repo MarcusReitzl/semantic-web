@@ -1,0 +1,31 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://aau.at/mareitzl>
+  a foaf:Person ;
+  foaf:name "Marcus Reitzl" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Marcus" ;
+  foaf:family_name "Reitzl" ;
+  foaf:nick "Marce" ;
+  foaf:mbox_sha1sum "03908b3ee26ce64dc599a079c33e878dba96d67b" ;
+  foaf:homepage <http://aau.at/marcus-reitzl.at> ;
+  foaf:phone <tel:123/456789> ;
+  foaf:schoolHomepage <http://aau.at/www.aau.at> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Christian Schneeweis" ;
+    foaf:mbox_sha1sum "f9ea7aa455a8702012d07ca203cd41f1202a1bf1"
+  ], <http://aau.at/chschnee> .
+
+<http://aau.at/chschnee>
+  a foaf:Person ;
+  foaf:name "Christian Motz" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Christian" ;
+  foaf:family_name "Motz" ;
+  foaf:nick "Chris" ;
+  foaf:mbox_sha1sum "fcde5b1d6b2867f21018447375c8f5c9789169fb" ;
+  foaf:homepage <http://aau.at/chris-schnee.at> ;
+  foaf:phone <tel:789/123456> ;
+  foaf:schoolHomepage <http://aau.at/www.aau.at> ;
+  foaf:knows <http://aau.at/mareitzl> .

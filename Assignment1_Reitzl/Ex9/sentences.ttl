@@ -1,0 +1,28 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+
+# All dogs are animals.
+
+ex9:Dog rdf:subClassOf ex9:Animal
+
+
+# Parent is a relationship defined for animals.
+
+ex9:Parent rdf:type rdf:Property ;
+           rdfs:domain ex9:Animal ;
+           rdfs:range ex9:Animal .
+
+
+
+# All animals related as parents are also relatives.
+
+
+
+
+# Jake states that dogs are carnivores.
+
+
+
+
+# Wikipedia has also a definition of a dog.
