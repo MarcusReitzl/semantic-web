@@ -3,6 +3,12 @@ ex:Mike ex:friend ex:Jerry .
 ex:friend rdfs:subPropertyOf foaf:knows .
 
 ex:Jerry a foaf:Person .
+ex:Jerry a foaf:Agent .
+ex:Jerry a foaf:Thing .
+ex:Mike a foaf:Agent .
+ex:Mike a foaf:Thing .
 ex:Mike foaf:knows ex:Jerry .
+
+
 
 
