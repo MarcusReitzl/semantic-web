@@ -1,0 +1,9 @@
+ex:Megan ex:hasParent ex:Mike . 
+ex:hasParent rdfs:domain ex:Person . 
+ex:Person rdfs:subClassOf ex:Agent .
+
+ex:Megan a ex:Person . 
+ex:Megan a ex:Agent . 
+
+
+ 

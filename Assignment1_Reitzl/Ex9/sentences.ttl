@@ -17,12 +17,18 @@ ex9:Parent rdf:type rdf:Property ;
 
 # All animals related as parents are also relatives.
 
-
+ex9:Parent rdfs:domain ex9:Relative ;
+           rdfs:range ex9:Relative .
 
 
 # Jake states that dogs are carnivores.
 
+ex9: Jake ex9:states ex9: StatementX
 
+ex9: StatementX rdf:subject ex9:Dogs ;
+                rdf:predicate ex9:subClassOf ;
+                rdf:object ex9:Carnivores .
 
 
 # Wikipedia has also a definition of a dog.
+
