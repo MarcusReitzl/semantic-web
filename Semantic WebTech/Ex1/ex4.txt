@@ -1,0 +1,128 @@
+[
+  {
+    "@id": "http://example.org/stuff/1.0/statement1",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": [
+      {
+        "@id": "http://example.org/stuff/1.0/Canon"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": [
+      {
+        "@id": "http://example.org/stuff/1.0/developed"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": [
+      {
+        "@id": "http://example.org/stuff/1.0/MarkIV"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/stuff/1.0/statement2",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#object": [
+      {
+        "@id": "http://example.org/stuff/1.0/OwnsCat"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate": [
+      {
+        "@id": "http://example.org/stuff/1.0/is"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject": [
+      {
+        "@id": "http://example.org/stuff/1.0/woman"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/stuff/1.0/students",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/persons"
+    ]
+  },
+  {
+    "@id": "http://example.org/stuff/1.0/peter",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/persons"
+    ],
+    "http://example.org/stuff/1.0/hasChildren": [
+      {
+        "@list": [
+          {
+            "@id": "http://example.org/stuff/1.0/jonas"
+          },
+          {
+            "@id": "http://example.org/stuff/1.0/rosemary"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/stuff/1.0/jonas",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/persons"
+    ],
+    "http://example.org/stuff/1.0/age": [
+      {
+        "@list": [
+          {
+            "@id": "http://example.org/stuff/1.0/3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/stuff/1.0/person",
+    "http://example.org/stuff/1.0/states": [
+      {
+        "@id": "http://example.org/stuff/1.0/statement2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/stuff/1.0/statement3",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/person"
+    ]
+  },
+  {
+    "@id": "http://example.org/stuff/1.0/rosemary",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/persons"
+    ],
+    "http://example.org/stuff/1.0/age": [
+      {
+        "@list": [
+          {
+            "@id": "http://example.org/stuff/1.0/5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/name",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ]
+  },
+  {
+    "@id": "http://example.org/stuff/1.0/student",
+    "http://example.org/stuff/1.0/states": [
+      {
+        "@id": "http://example.org/stuff/1.0/statement3"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/stuff/1.0/ProfessionalPhotographer",
+    "http://example.org/stuff/1.0/states": [
+      {
+        "@id": "http://example.org/stuff/1.0/statement1"
+      }
+    ]
+  }
+]

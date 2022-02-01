@@ -1,0 +1,13 @@
+ex:Dog rdf:type ex:Animal
+
+ex:Animal rdfs:range ex:Parent
+
+ex:Animal rdfs:range ex:Relatives 
+ex:Person rdfs:subClassOf ex:Animal 
+ex:relative rdfs:domain ex:Person 
+ex:relative rdfs:range ex:Person 
+
+ex:Jake rdfs:subClassOf ex:Person 
+ex:Dog rdfs:subClassOf ex:Carnivores 
+
+ex:Wikipedia rdfs:label ex:Dog

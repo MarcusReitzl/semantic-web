@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/chiara/ws21/semanticweb/ex1"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/chiara/ws21/semanticweb/ex1">
+    <Prefix name="" IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-33"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11</Import>
+    <Declaration>
+        <ObjectProperty IRI="#isParentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isChildOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGrandmother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#grandChild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#femalePartnerIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGrandfather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAncestorOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Daughter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHusband"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWife"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFatherOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isHappy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#malePartnerIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Father"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMalePartner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFemalePartner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGrandparent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMotherOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://webprotege.stanford.edu/Parent"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Man"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Person"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Human"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Woman"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Father"/>
+        <Class IRI="http://webprotege.stanford.edu/Parent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Father"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Man"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mother"/>
+        <Class IRI="http://webprotege.stanford.edu/Parent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mother"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Woman"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Man"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Woman"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Father"/>
+        <Class IRI="#Mother"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Human"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9aMOmMnVU81TpcvkicHbb5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Daughter"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9aMOmMnVU81TpcvkicHbb5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://webprotege.stanford.edu/Parent"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfMQgnEQHfsut8YFEWulSW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Human"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfMQgnEQHfsut8YFEWulSW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mother"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfMQgnEQHfsut8YFEWulSW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://webprotege.stanford.edu/Parent"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RqCaRoVHqKFU1Knxv67JPa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Human"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RqCaRoVHqKFU1Knxv67JPa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Father"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RqCaRoVHqKFU1Knxv67JPa"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFather"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9aMOmMnVU81TpcvkicHbb5"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RqCaRoVHqKFU1Knxv67JPa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMother"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9aMOmMnVU81TpcvkicHbb5"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfMQgnEQHfsut8YFEWulSW"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isChildOf"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9aMOmMnVU81TpcvkicHbb5"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfMQgnEQHfsut8YFEWulSW"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isChildOf"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9aMOmMnVU81TpcvkicHbb5"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RqCaRoVHqKFU1Knxv67JPa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHusband"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfMQgnEQHfsut8YFEWulSW"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RqCaRoVHqKFU1Knxv67JPa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMotherOf"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfMQgnEQHfsut8YFEWulSW"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9aMOmMnVU81TpcvkicHbb5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isParentOf"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfMQgnEQHfsut8YFEWulSW"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9aMOmMnVU81TpcvkicHbb5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#malePartnerIn"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfMQgnEQHfsut8YFEWulSW"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RqCaRoVHqKFU1Knxv67JPa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#femalePartnerIn"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RqCaRoVHqKFU1Knxv67JPa"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfMQgnEQHfsut8YFEWulSW"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWife"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RqCaRoVHqKFU1Knxv67JPa"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RBfMQgnEQHfsut8YFEWulSW"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFatherOf"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RqCaRoVHqKFU1Knxv67JPa"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9aMOmMnVU81TpcvkicHbb5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isParentOf"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RqCaRoVHqKFU1Knxv67JPa"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9aMOmMnVU81TpcvkicHbb5"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#hasChild"/>
+        <ObjectProperty IRI="#hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#hasDaughter"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#hasChild"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#hasDaughter"/>
+        <ObjectProperty IRI="#hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#femalePartnerIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#grandChild"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFather"/>
+        <ObjectProperty IRI="#hasParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGrandfather"/>
+        <ObjectProperty IRI="#hasGrandparent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGrandmother"/>
+        <ObjectProperty IRI="#hasGrandparent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGrandparent"/>
+        <ObjectProperty IRI="#hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMother"/>
+        <ObjectProperty IRI="#hasParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParent"/>
+        <ObjectProperty IRI="#hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFatherOf"/>
+        <ObjectProperty IRI="#isParentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMotherOf"/>
+        <ObjectProperty IRI="#isParentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isParentOf"/>
+        <ObjectProperty IRI="#isAncestorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#malePartnerIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#hasChild"/>
+        <ObjectProperty IRI="#isChildOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFather"/>
+        <ObjectProperty IRI="#isFatherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMother"/>
+        <ObjectProperty IRI="#isMotherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRelation"/>
+        <ObjectProperty IRI="#isAncestorOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#hasChild"/>
+        <Class IRI="http://webprotege.stanford.edu/Parent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#hasChild"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#hasChild"/>
+        <Class IRI="#Mother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#hasDaughter"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#hasDaughter"/>
+        <Class IRI="#Mother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFather"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGrandfather"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGrandmother"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGrandparent"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMother"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isChildOf"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#hasDaughter"/>
+        <Class IRI="http://webprotege.stanford.edu/Parent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFather"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Man"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGrandfather"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Man"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGrandmother"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Woman"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGrandparent"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMother"/>
+        <Class IRI="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11#Woman"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParent"/>
+        <Class IRI="http://webprotege.stanford.edu/Parent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isChildOf"/>
+        <Class IRI="http://webprotege.stanford.edu/Parent"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#femalePartnerIn"/>
+            <ObjectProperty IRI="#hasMalePartner"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#hasHusband"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasParent"/>
+            <ObjectProperty IRI="#hasFather"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#hasGrandfather"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasParent"/>
+            <ObjectProperty IRI="#hasMother"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#hasGrandmother"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasParent"/>
+            <ObjectProperty IRI="#hasParent"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#hasGrandparent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#malePartnerIn"/>
+            <ObjectProperty IRI="#hasFemalePartner"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#hasWife"/>
+    </SubObjectPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

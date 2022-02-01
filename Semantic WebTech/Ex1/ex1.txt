@@ -1,0 +1,40 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/"
+	  xmlns="http://aau.at/#">
+
+
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me"> 
+	<foaf:name>Chiara Marita Szolderits</foaf:name> 
+	<foaf:title>BSc</foaf:title>
+	<foaf:givenname>Chiara Marita</foaf:givenname> 
+	<foaf:family_name>Szolderits</foaf:family_name>
+	<foaf:nick>tschitschi</foaf:nick>
+	<foaf:gender>female</foaf:gender> 
+	<foaf:workInfoHomepage rdf:resource="www.infineon.com"/> 
+	<foaf:schoolHomepage rdf:resource="www.hak-althofen.at"/> 
+	<foaf:knows> 
+		<foaf:Person rdf:about="http://aau.at/julia/foaf.rdf#me"> 
+			<foaf:name>Julia</foaf:name>
+			<foaf:mbox rdf:resource="mailto:julia@gmail.com"/></foaf:Person>
+	</foaf:knows> 
+	<foaf:knows> 
+		<foaf:Person rdf:about="http://aau.at/jasmin/foaf.rdf#me">
+			<foaf:name>Jasmin</foaf:name> 
+			<foaf:mbox rdf:resource="mailto:jasi123@gmail.com"/></foaf:Person>
+	</foaf:knows>
+	<foaf:knows> 
+		<foaf:Person rdf:about="http://aau.at/christoph/foaf.rdf#me"> 
+			<foaf:name>Christoph</foaf:name> 
+			</foaf:Person>
+		</foaf:knows>
+	</foaf:Person>
+</rdf:RDF>

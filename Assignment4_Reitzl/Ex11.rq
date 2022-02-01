@@ -1,0 +1,3 @@
+# Get more information about elements from dbpedia. Use the fact that every element has a name
+# in the ontology and in rdfs:label in dbpedia resource description. See for instance “Helium” http://dbpedia.org/page/Helium
+

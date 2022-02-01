@@ -1,0 +1,42 @@
+JSON-LD is designed to be usable directly as JSON, with no knowledge of RDF.
+It is also designed to be usable as RDF, if desired, for use with other Linked Data technologies like SPARQL.
+Developers who require any of the facilities listed above or need to serialize an RDF Graph or RDF Dataset 
+in a JSON-based syntax will find JSON-LD of interest. 
+People intending to use JSON-LD with RDF tools will find it can be used as another RDF syntax, like Turtle.
+
+@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf:<http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/stuff/1.0/> .
+
+foaf:name rdf:type rdf:Property.
+ex:peter rdf:type foaf:persons.
+ex:jonas rdf:type foaf:persons.
+ex:rosemary rdf:type foaf:persons.
+ex:students rdf:type foaf:persons.
+
+ex:peter ex:hasChildren(
+	ex:jonas ex:rosemary
+).
+ex:jonas ex:age(
+	ex:3
+).
+ex:rosemary ex:age(
+	ex:5
+).
+
+
+ex:ProfessionalPhotographer ex:states ex:statement1.
+ex:statement1 rdf:subject ex:MarkIV;
+	      rdf:predicate ex:developed;
+	      rdf:object ex:Canon.
+
+ex:person ex:states ex:statement2.
+ex:statement2 rdf:subject ex:woman;
+	      rdf:predicate ex:is;
+	      rdf:object ex:OwnsCat.
+
+ex:student ex:states ex:statement3.
+ex:statement3 rdf:type foaf:person.
+
+

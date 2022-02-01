@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-11" uri="ex2_Szolderits,%20Gubesch/ex1-4.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1606899718622" name="http://www.semanticweb.org/chiara/ontologies/2020/10/untitled-ontology-30" uri="ex2_semantic%20web/ex2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1606899718622" name="duplicate:http://www.semanticweb.org/chiara/ws21/semanticweb/ex1" uri="ex1-4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1606899718622" name="duplicate:http://www.semanticweb.org/chiara/ws21/semanticweb/ex1" uri="ex1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1606899718622" name="http://www.semanticweb.org/chiara/ws21/semanticweb/ex5" uri="ex5.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1606899718622" name="shadowed:http://www.semanticweb.org/chiara/ws21/semanticweb/ex1" uri="ex2_Szolderits,%20Gubesch/ex1-4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1606899718622" name="shadowed:http://www.semanticweb.org/chiara/ws21/semanticweb/ex1" uri="ex2_semantic%20web/ex1-4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1606899718622" name="shadowed:http://www.semanticweb.org/chiara/ws21/semanticweb/ex5" uri="ex2_Szolderits,%20Gubesch/ex5.owl"/>
+    </group>
+</catalog>

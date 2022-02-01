@@ -1,0 +1,18 @@
+# Extend the previous query to find whether some not actinides in among the elements.
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX table: <http://www.daml.org/2003/01/periodictable/PeriodicTable#>
+
+SELECT ?element ?atomicnumber ?actinoid
+WHERE {
+	?element table:atomicNumber ?atomicnumber;
+	table:group ?actinoid.
+	FILTER ((?atomicnumber > 85) && (?atomicnumber < 105) && (?actinoid != table:group_actinoid)).
+}
+ORDER BY ?element
+LIMIT 10
+OFFSET 3

@@ -1,0 +1,84 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX table: <http://www.daml.org/2003/01/periodictable/PeriodicTable#>
+
+#2.)
+SELECT ?element
+WHERE {
+  ?element table:standardState table:liquid;
+	 table:classification table:Metallic }
+
+#3.)
+SELECT ?element ?atomicnum
+WHERE {
+	?element table:atomicNumber ?atomicnum.
+	FILTER ((?atomicnum > 85) && (?atomicnum < 105)).
+}
+ORDER BY ?element
+LIMIT 10
+OFFSET 3
+
+#4.)
+SELECT ?element ?atomicnum ?actinoid
+WHERE {
+	?element table:atomicNumber ?atomicnum;
+	 table:group ?actinoid.
+	FILTER ((?atomicnum > 85) && (?atomicnum < 105) && (?actinoid != table:group_actinoid)).
+}
+ORDER BY ?element
+LIMIT 10
+OFFSET 3
+
+#5.)
+SELECT ?name
+WHERE {
+	?element table:name ?name;
+ 		rdf:type table:Element.
+	FILTER ( regex(?name, "^c"))
+}
+ORDER BY ?element
+
+#6.)
+SELECT ?group (COUNT(?element) AS ?elements)
+WHERE {
+	?element table:group ?group.
+}
+GROUP BY ?group
+ORDER BY ?group
+
+
+#8.)
+SELECT ?name ?atomicNumMax
+WHERE {
+	{
+		SELECT ?class (MAX(?atomicNum) AS ?atomicNumMax)
+		WHERE {
+			?element rdf:type table:Element;
+				table:classification ?class;
+				table:atomicNumber ?atomicNum.
+			FILTER(?class = table:Non-metallic)
+		}
+		GROUP BY ?class
+	}
+	?element table:name ?name;
+		table:atomicNumber ?atomicNumMax
+}
+
+
+
+#8.)
+SELECT ?element ?atomicnum
+WHERE {
+?element table:group ?actinoid; //table:classification table:!Metallic;	
+table:atomicNumber ?atomicnum.
+	FILTER (?atomicnum = MAX(?atomicnum) && table != “Metallic”).
+}
+#9.)
+SELECT ?element ?atomicnum
+WHERE {
+?element table:classification table:Metallic;	
+table:atomicNumber ?atomicnum.
+	FILTER (?atomicnum > AVG(?atomicnum)).
+}

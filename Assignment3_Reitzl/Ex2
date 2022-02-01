@@ -1,0 +1,38 @@
+# Each Student had not wrote a habilitation
+# 𝑆𝑡𝑢𝑑𝑒𝑛𝑡 ⊑¬(∃𝑤𝑟𝑜𝑡𝑒.𝐻𝑎𝑏𝑖𝑙𝑖𝑡𝑎𝑡𝑖𝑜𝑛)
+
+OK
+
+𝑆𝑡𝑢𝑑𝑒𝑛𝑡 ⊑ ¬(∃𝑤𝑟𝑜𝑡𝑒. 𝐻𝑎𝑏𝑖𝑙𝑖𝑡𝑎𝑡𝑖𝑜𝑛)
+ ∀𝑥(Student (𝑥) → ¬(∃y[wrote(x, y) ∧ Habilitation(y)]))
+Also: ∀𝑥(Student (𝑥) → (∀y[¬wrote(x, y) ∨ ¬Habilitation(y)]))
+
+Not every student wrote one Habilitation.
+
+
+# A conference chair organizes at least one event that is both research and public
+# 𝐶h𝑎𝑖𝑟 ⊑∀𝑜𝑟𝑔𝑎𝑛𝑖𝑧𝑒𝑠.(𝑅𝑒𝑠𝑒𝑎𝑟𝑐h⊓𝑃𝑢𝑏𝑙𝑖𝑐)
+
+OK
+
+𝐶ℎ𝑎𝑖𝑟 ⊑ ∀𝑜𝑟𝑔𝑎𝑛𝑖𝑧𝑒𝑠. (𝑅𝑒𝑠𝑒𝑎𝑟𝑐ℎ ⊓ 𝑃𝑢𝑏𝑙𝑖𝑐)
+∀𝑥(Chair (𝑥) → ∀y[organizes(x, y) ∧ Research(y) ∧ Public(y)])
+
+Every event is both research and public.
+
+
+# Each assistant is a university staff cannot teach in a privatissimum (exclusive tutorial)
+# 𝐴𝑠𝑠𝑖𝑠𝑡𝑎𝑛𝑡 ⊑𝑆𝑡𝑎𝑓𝑓⊓∀𝑡𝑒𝑎𝑐h𝑒𝑠.(¬𝑃𝑟𝑖𝑣𝑎𝑡𝑖𝑠𝑠𝑖𝑚𝑢𝑚)
+
+!OK
+
+𝐴𝑠𝑠𝑖𝑠𝑡𝑎𝑛𝑡 ⊑ 𝑆𝑡𝑎𝑓𝑓 ⊓ ∀𝑡𝑒𝑎𝑐ℎ𝑒𝑠. (¬𝑃𝑟𝑖𝑣𝑎𝑡𝑖𝑠𝑠𝑖𝑚𝑢𝑚)
+∀𝑥(Assistant (𝑥) → Staff(x) ∧  ∀y[teaches(x, y) ∧ ¬Privatissimum(y)])
+
+Every assistant is a staff but not a university stuff. Teach privatissimum is semantically correct
+
+
+
+
+
+

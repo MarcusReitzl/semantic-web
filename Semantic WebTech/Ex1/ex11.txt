@@ -1,0 +1,15 @@
+ex:Megan ex:hasParent ex:Mike .
+ex:hasParent rdfs:domain ex:Person .
+ex:Person rdfs:subClassOf ex:Agent .
+
+------- ENTAILMENTS ---------
+ex:hasParent rdf:type rdfs.Datatype . 
+ex:Mike rdf:type: ex:Person . 
+ex:Mike rdf:type ex:Agent . 
+ex:hasParent rdfs:subClassOf rdfs:Literal . 
+
+
+hasParent=a, Person=x
+y=Megan, hasparent=a, z=Mike 
+x=Person, y=Agent
+z=Mike, x=Person

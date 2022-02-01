@@ -1,0 +1,72 @@
+@prefix owl: <http://xmlns.com/foaf/0.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <ttp://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+
+:hasChild rdf:type owl:ObjectProperty
+:parent rdf:type owl:ObjectProperty
+:Human rdf:type owl:Class
+:Alien rdf:type owl:Class
+:Man rdf:type owl:Class
+:Woman rdf:type owl:Class
+:Sibling rdf:type owl:Class
+:FatherWithDaugthers rdf:type owl:Class
+
+# 𝐻𝑢𝑚𝑎𝑛 ⊑ ¬𝐴𝑙𝑖𝑒𝑛
+
+:Human rdfs:subClassOf [ owl:complementOf :Alien ] .
+
+Human subClassOf notAlien
+
+
+# FatherWithDaugthers ⊑ 𝑀𝑎𝑛 ⊓ ∀h𝑎𝑠𝐶h𝑖𝑙𝑑.𝑊𝑜𝑚𝑎𝑛
+
+:FatherWithDaugthers rdfs:subClassOf 
+    [ owl:intersectionOf (
+        [ :Man ]
+        [
+            rdf:type owl:Restriction ;
+            owl:onProperty :hasChild ; 
+            owl:allValuesFrom :Woman
+        ] )
+    ] .
+
+
+
+# 𝑆𝑖𝑏𝑙𝑖𝑛𝑔 ⊑ ∃𝑝𝑎𝑟𝑒𝑛𝑡. ∃h𝑎𝑠𝐶h𝑖𝑙𝑑. ¬𝑆𝑒𝑙𝑓 
+
+# corrected solution (Lecture)
+:Sibling rdfs:subClassOf 
+    [ rdf:type owl: Restriction ;
+        owl:onProperty :parent ; 
+        owl:someValuesFrom [
+            [ rdf:type owl: Restriction ;
+              owl:onProperty :hasChild ; 
+              owl:someValuesFrom [
+                owl:complementOf :Self
+              ]
+            ]
+        ] 
+
+    ] .
+
+
+#:Sibling rdfs:subClassOf 
+    [ owl:unionOf 
+        ( [ rdf:type owl: Restriction ;
+            owl:onProperty :parent ; owl:someValuesFrom [
+                owl:complementOf :Self
+            ]
+        ] 
+        [ rdf:type owl: Restriction ;
+            owl:onProperty :hasChild ; owl:someValuesFrom [
+                owl:complementOf :Self
+            ]
+
+        ] )
+
+    ] .
+
+
+

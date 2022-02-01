@@ -1,0 +1,16 @@
+#𝐶𝑢𝑠𝑡𝑜𝑚𝑒𝑟 ⊑ 𝑃𝑢𝑏𝑙𝑖𝑐𝑂𝑟𝑔𝑎𝑛𝑖𝑧𝑎𝑡𝑖𝑜𝑛 𝐶𝑢𝑠𝑡𝑜𝑚𝑒𝑟 ⊑ 𝑀𝑢𝑛𝑖𝑐𝑖𝑝𝑎𝑙𝑖𝑡𝑦
+#A customer is both a public organization and municipality
+
+∀𝑥(Customer (𝑥) → PublicOranization(x) ∧  Municipality(x))
+satisfied if a customer is both
+
+#𝐺𝑢𝑒𝑠𝑡𝑃𝑟𝑜𝑓𝑒𝑠𝑠𝑜𝑟 ⊑¬∀h𝑜𝑙𝑑𝑠.(𝐿𝑒𝑐𝑡𝑢𝑟𝑒⊔𝑆𝑒𝑚𝑖𝑛𝑎𝑟)
+#If someone holds a Lecture or a seminar then he/she is a guest professor.
+
+∀𝑥(GuestProfessor (𝑥) → ¬∀y[holds(x, y) ∧ (Lecture(y) ∨ Seminar(y)])
+not satisfied because the negation implies that not every lecture is hold by a guest lecturer
+
+#𝑆𝑒𝑐𝑟𝑒𝑡𝑎𝑟𝑦 ⊑ 𝑈𝑛𝑖𝐸𝑚𝑝𝑙𝑜𝑦𝑒𝑒 𝑈𝑛𝑖𝐸𝑚𝑝𝑙𝑜𝑦𝑒𝑒 ⊑ ¬𝑆𝑒𝑐𝑟𝑒𝑡𝑎𝑟𝑦
+#All secretaries are university employee, but not every employee is a secretary
+
+Dunno :/

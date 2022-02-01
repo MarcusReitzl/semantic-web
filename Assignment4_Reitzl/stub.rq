@@ -1,0 +1,14 @@
+
+# declarations of namespaces
+PREFIX ex: <http://example.com/version/1.0> . 
+
+# definition of result clause
+SELECT ?var1 ?var2
+# definition of datasets
+FROM <http://example.com/DigitalCamera.rdf> 
+# conditions
+WHERE {
+    ?var1 ex:madeBy ?var2 .
+}
+# modifiers
+ORDER BY ?var1

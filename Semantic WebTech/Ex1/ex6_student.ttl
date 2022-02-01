@@ -1,0 +1,38 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.polleres.net/foaf.rdf>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <http://www.polleres.net/foaf.rdf#me> ;
+  foaf:primaryTopic <http://www.polleres.net/foaf.rdf#me> ;
+  owl:sameAs <http://polleres.net/foaf.rdf>, <http://www.polleres.net/foaf.rdf> .
+
+<http://www.polleres.net/foaf.rdf#me>
+  a foaf:Person ;
+  owl:sameAs <http://www.w3.org/2005/rules/wg/data#apollere2> ;
+  rdfs:seeAlso <http://www.google.com/profiles/droxel> ;
+  foaf:page <http://dblp.l3s.de/d2r/page/authors/Axel_Polleres> ;
+  foaf:interest <http://dbpedia.org/resource/Logic_programming>, <http://dbpedia.org/resource/Semantic_Web> ;
+  foaf:name "Axel Polleres" ;
+  foaf:title "Dr" ;
+  foaf:givenname "Axel" ;
+  foaf:surname "Polleres" ;
+  foaf:firstName "Axel" ;
+  foaf:family_name "Polleres" ;
+  foaf:familyName "Polleres" ;
+  foaf:lastName "Polleres" ;
+  foaf:schoolHomepage <http://www.tuwien.ac.at/> ;
+  foaf:knows <http://harth.org/andreas/foaf#ah>, <http://www.wikier.org/foaf#wikier> .
+
+<http://harth.org/andreas/foaf#ah>
+  a foaf:Person ;
+  rdfs:seeAlso <http://www.harth.org/andreas/foaf.rdf> ;
+  foaf:name "Andreas Harth" ;
+  foaf:homepage <http://www.harth.org/andreas/> .
+
+<http://www.wikier.org/foaf#wikier>
+  a foaf:Person ;
+  rdfs:seeAlso <http://www.wikier.org/foaf.rdf> ;
+  foaf:name "Sergio Fernández" ;
+  foaf:homepage <http://www.wikier.org/> .

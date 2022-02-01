@@ -1,0 +1,13 @@
+ex:Mike a foaf:Person .
+ex:Mike ex:friend ex:Jerry . 
+ex:friend rdfs:subPropertyOf foaf:knows . 
+
+---- ENTAILMENTS ---------
+ex:Mike rdf:type rdfs:Resource . 
+ex:Jerry rdf:type rdfs:Resource . 
+ex:Mike foaf:knows ex:Jerry . 
+foaf:knows rdf:type rdfs:Datatype . 
+
+
+x=Mike, a=friend, y=Jerry 
+friend=a, know=b
